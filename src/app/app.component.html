@@ -1,11 +1,29 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
+<div class="container">
+  <div class="row">
+    <h1 class="col-md-12">
+      Welcome to {{title}}!
+    </h1>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
 
-  <input type="text" [(ngModel)]="name">
-  <p>{{name}}</p>
+      <input type="text" [(ngModel)]="name">
+    </div>
+    <div class="col-md-4">
+
+      <p>{{name}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <div app-servers></div>
+    </div>
+    <div class="col-md-4">
+      <app-succes-alert></app-succes-alert>
+      <app-warning-alert></app-warning-alert>
+    </div>
+  </div>
 </div>
 
 
