@@ -1,0 +1,13 @@
+<button class="btn btn-primary"
+        (click)="showSecret()"
+>Display details
+</button>
+
+<p *ngIf="secret">Secret password = tuna</p>
+
+<ul>
+  <li *ngFor="let l of log ; let i = index"
+      [ngStyle]="{backgroundColor: getBgColor(i)}"
+      [ngClass]="{'white-one': i>=4}">{{l}}
+  </li>
+</ul>
